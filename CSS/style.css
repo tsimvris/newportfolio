@@ -1,12 +1,12 @@
-html, body{ margin:0;  padding:0; height:100%; text-align: center;}
+html, body{ margin:0;  padding:0; height:100%; text-align: center; background-color: #494949;}
 section{min-height:100%;}
 a{text-decoration: none;}
 li{list-style-type: none;}
-h1, h2, h3, a{font-family: 'Roboto', sans-serif; font-weight: 600; color:#494949; text-transform: uppercase;}
-h2{color: #5d7177;}
+h1, h2, h3, a{font-family: 'Roboto', sans-serif; font-weight: 600; color:white; text-transform: uppercase;}
+h2{color: white;}
 h3{font-size: 40px; padding-top: 8%; margin-bottom: 5px;}
-h4, p{font-family: 'Roboto Slab', serif; color:#494949;}
-hr{width: 30px; height:3px; background: #494949; border:0; margin: 0 auto 40px auto;}
+h4, p{font-family: 'Roboto Slab', serif; color:#5797D9;}
+hr{width: 30px; height:3px; background: white; border:0; margin: 0 auto 40px auto;}
 li, #logo, img, .button {transition: all 300ms; -webkit-transition: all 300ms; -moz-transition: all 300ms; -o-transition: all 300ms;}
 
 /* HEADER   ****************************/
@@ -16,8 +16,7 @@ header{
     position: fixed;
     top:0;
     left:0;
-    background: #fff;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    background: transparent;
     z-index: 1;
 }
 
@@ -31,16 +30,19 @@ header{
 }
 #logo img{
     width:100%;
+    height: 50px;
 }
 header nav { float: right; margin: 10px 50px 0 0 ; }
-header nav ul li{float: left; margin-left: 25px;}
-header nav ul li a{font-size: 16px; }
+header nav ul li{float: left; margin-left: 25px; color: white !important;}
+header nav ul li a{font-size: 16px;}
 header nav ul li:hover{padding-top: 5px;}
 
 /* HOME   ****************************/
-
+.aboutme{
+    color:#5797D9;
+}
 #home{
-    background: url(../assets/arrows-1834859.jpg); 
+    background: url(../assets/sea-7086932.jpg); 
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
@@ -56,17 +58,28 @@ header nav ul li:hover{padding-top: 5px;}
 }
 #home img {
     width: 32px;
-    margin-top:150px;
+    margin-top:400px;
     opacity: 0.7;
 }
 #home img:hover{
     opacity: 1;
 }
+#home hr{
+visibility: hidden;}
 /* ABOUT   ****************************/
+.skills{
+    width:50%;
+    margin-top:-50px;
+    float: left;
+    color: #f0f0f0;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+}
 #about img{
     width: 240px;
-
+   
 }
+
 #about h4{
     font-size: 25px;
 }
@@ -82,7 +95,11 @@ header nav ul li:hover{padding-top: 5px;}
 }
 /* WORK   ****************************/
 #work{
-    background-color: #f0f0f0;
+    background-color: #5797D9;
+    
+}
+#work h3{
+    color:#494949
 }
 #projects{
     width:80%;
@@ -114,7 +131,7 @@ form input, textarea{
     margin-bottom: 10px;
     border-radius: 2px;
     border: 2px solid;
-    border-color: #494949;
+    border-color: #5797D9;
     outline: none;
 
 }
@@ -128,7 +145,7 @@ form textarea{
     resize: none;
 }
 .input_text{
-    color:#494949;
+    color:#5797D9;
     padding-left: 10px;
 }
 form input:first-child{
@@ -140,20 +157,21 @@ form input:first-child{
 :-moz-placeholder{color:#999999;}
 
 .button{
-    background-color: #f0f0f0;
-    color:#494949;
+    background-color: #5797D9;
+    color:white;
     width: 566px;
     height: 50px;
 }
 .button:hover{
-    background-color: #494949;
-    color:#f0f0f0;
+    background-color: white;
+    color:#5797D9;
+    cursor: pointer;
 }
 /* FOOTER   ****************************/
 footer{
     width: 100%;
     height: 70px;
-    background-color: #3f3f3f;
+    background-color: #5797D9;
 }
 footer p{
     color:#f0f0f0;
@@ -170,6 +188,9 @@ footer p{
     #logo{
         width: 100px;
         margin-top: 5px;
+    }
+    #logo img{
+        height:50px;
     }
     header nav{
         margin-top: 0;
@@ -194,7 +215,7 @@ footer p{
         width: auto;
     }
     #projects ul li{
-        width: 100%;
+        width: 33.3%;
     }
     #projects ul li:last-child{
         padding-bottom: 20%;
@@ -212,6 +233,9 @@ footer p{
     #logo{
         width: 70px;
         margin-top: 5px;
+    }
+    #logo img{
+        height:40px;
     }
     header nav{
         margin-top: 0;
@@ -236,7 +260,7 @@ footer p{
         width: auto;
     }
     #projects ul li{
-        width: 100%;
+        width: 33.3%;
     }
     #projects ul li:last-child{
         padding-bottom: 20%;
@@ -255,6 +279,9 @@ footer p{
     #logo{
         width: 70px;
         margin-top: 5px;
+    }
+    #logo img{
+        height:30px;
     }
     header nav{
         margin-top: 0;
@@ -279,7 +306,7 @@ footer p{
         width: auto;
     }
     #projects ul li{
-        width: 100%;
+        width: 33.3%;
     }
     #projects ul li:last-child{
         padding-bottom: 20%;
@@ -314,6 +341,9 @@ footer p{
         width: 70px;
         margin-top: 5px;
     }
+    #logo img{
+        height:30px;
+    }
     header nav{
         margin-top: 0;
     }
@@ -337,13 +367,15 @@ footer p{
         width: auto;
     }
     #projects ul li{
-        width: 100%;
+        width: 50%;
+        margin-bottom:10px;
+
     }
     #projects ul li:last-child{
         padding-bottom: 20%;
     }
     #projects img{
-        width:55%;
+        width:50%;
         height: auto;
     }
     form input, textarea{

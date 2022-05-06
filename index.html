@@ -3,12 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="publisher" content="Petros Tsimvris" />
+    <meta property="DC.rights" content="Alle Rechte liegen beim Autor" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="CSS/style.css">
     <title>Petros Tsimvris</title>
     <!-- <script  src="https://code.jquery.com/jquery-1.12.4.min.js"  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="  crossorigin="anonymous"></script> -->
@@ -18,17 +20,14 @@
 <body>
 <!--HEADER-------------------------------------------------->
     <header>
-        <div id="logo">
-            <a href="#about">
-                <img  src="assets/Petros.png" alt="logo">
-            </a>
-        </div>
         <nav id="main-nav">
             <ul>
                 <a href="#home"><li>Home</li></a>
                 <a href="#about"><li>About</li></a>
                 <a href="#work"><li>Work</li></a>
                 <a href="#contact"><li>Contact</li></a>
+                <a href='https://www.linkedin.com/in/petros-tsimvris/' target="blank"> <li><i class="fa fa-linkedin-square"></i> LinkedIn</li></a>
+                <a href='https://github.com/tsimvris' target="blank"><li><i class="fa fa-github"></i> GitHub</li></a>
             </ul>
         </nav>
     </header>
@@ -39,23 +38,19 @@
         <hr>
         <h1>Petros Tsimvris</h1>
         <h2>Frontend Developer</h2>
-        <a href="">
-            <img src="assets/arrow.png" alt="Pfeil">
-        </a>
+        
     </section>
 
 <!--ABOUT-------------------------------------------------->
 
     <section id="about">
-        <h3>About</h3>
+        <h3 class="aboutme">About</h3>
         <hr>
         <img src="assets/avataaars.svg" alt="avatar">
         <h4>Petros Tsimvris</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Sapiente doloremque doloribus blanditiis ex, provident natus atque,
-            sint optio nulla vel error suscipit magni quod eius. Inventore aperiam
-            eius repellat veritatis eaque error officiis sit amet explicabo, eum vel
-            quidem laudantium.</p>
+        <p>Click <a id="petros" href="assets/Lebenslauf.pdf" target="_blank">here</a> to see my CV     
+                
+            </p>
     </section>
 
 <!--WORK-------------------------------------------------->
@@ -65,12 +60,11 @@
         <hr>
         <div id="projects">
             <ul>
-                <li><a href=""><img src="" alt="Project 1"></a></li>
-                <li><a href=""><img src="" alt="Project 2"></a></li>
-                <li><a href=""><img src="" alt="Project 3"></a></li>
-                <li><a href=""><img src="" alt="Project 4"></a></li>
-                <li><a href=""><img src="" alt="Project 5"> </a></li>
-                <li><a href=""><img src="" alt="Project 6"> </a></li>
+                <li><a target="blank" href="http://juicy-steuer.tsimvris.com/"><img src="assets/projects/1.jpeg" alt="Project 1"></a></li>
+                <li><a target="blank" href="https://codepen.io/tsimvris/full/MWrXrNw"><img src="assets/projects/2.jpeg" alt="Project 2"></a></li>
+                <li><a target="blank"  href="https://codepen.io/tsimvris/full/qBpKPPo"><img src="assets/projects/3.jpeg" alt="Project 3"></a></li>
+                <li><a target="blank"  href="https://codepen.io/tsimvris/full/ExoRwob"><img src="assets/projects/4.jpeg" alt="Project 4"></a></li>
+                <li><a target="blank"  href="https://codepen.io/tsimvris/full/QWaxqgb"><img src="assets/projects/5.jpeg" alt="Project 5"> </a></li>
             </ul>
         </div>
     </section>
@@ -78,7 +72,7 @@
 <!--Contact-------------------------------------------------->
 
     <section id="contact">
-        <h3>Contact</h3>
+        <h3 class="aboutme">Contact</h3>
         <hr>
         <form action="">
         <input class="input_text" type="email" tabindex="1" placeholder="E-Mail"><br>
@@ -91,7 +85,7 @@
 
 <!--FOOTER-------------------------------------------------->
 
-    <footer>
+    <footer id="">
         <p>
             &copy; 2021 - 2022 Petros Tsimvris
         </p>

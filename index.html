@@ -8,24 +8,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/fontawesome.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
     <title>Petros Tsimvris</title>
+    <!-- <script  src="https://code.jquery.com/jquery-1.12.4.min.js"  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="  crossorigin="anonymous"></script> -->
+
 </head>
 
 <body>
 <!--HEADER-------------------------------------------------->
     <header>
         <div id="logo">
-            <a href="#">
+            <a href="#about">
                 <img  src="assets/Petros.png" alt="logo">
             </a>
         </div>
-        <nav>
+        <nav id="main-nav">
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <a href="#home"><li>Home</li></a>
+                <a href="#about"><li>About</li></a>
+                <a href="#work"><li>Work</li></a>
+                <a href="#contact"><li>Contact</li></a>
             </ul>
         </nav>
     </header>
@@ -77,12 +80,13 @@
     <section id="contact">
         <h3>Contact</h3>
         <hr>
-        <input type="email" tabindex="1" placeholder="E-Mail"><br>
-        <input type="text" tabindex="2" placeholder="Your Name"><br>
-        <input type="text" tabindex="3" placeholder="Your Name"><br>
+        <form action="">
+        <input class="input_text" type="email" tabindex="1" placeholder="E-Mail"><br>
+        <input class="input_text"  type="text" tabindex="2" placeholder="Your Name"><br>
+        <input class="input_text"  type="text" tabindex="3" placeholder="Your Name"><br>
         <textarea tabindex="4" name="" id="" cols="20" rows="5" placeholder="Your Message"></textarea><br>
         <input type="submit" class="button">
-
+    </form>
     </section>
 
 <!--FOOTER-------------------------------------------------->
@@ -92,6 +96,8 @@
             &copy; 2021 - 2022 Petros Tsimvris
         </p>
     </footer>
+
+    <script src="js/mobile-menu.js"></script>
 </body>
 
 </html>

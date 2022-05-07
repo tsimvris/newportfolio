@@ -78,13 +78,19 @@
     <section id="contact">
         <h3 class="aboutme">Contact</h3>
         <hr>
-        <form action="contact-form-handler.php" method="post" id="contact-form">
-        <input class="input_text form-control" name="email" type="email" tabindex="1" placeholder="E-Mail" required><br>
-        <input class="input_text form-control" name="name"  type="text" tabindex="2" placeholder="Your Name" required><br>
+        <form action="mail.php" method="POST" id="contact-form">
+
+        <input class="input_text form-control" name="email" id="email" type="email" tabindex="1" placeholder="E-Mail" required><br>
+
+        <input class="input_text form-control" name="name" id="name"  type="text" tabindex="2" placeholder="Your Name" required><br>
+
         <textarea tabindex="3" name="message" class="form-control" id="" cols="20" rows="5" placeholder="Your Message" required></textarea><br>
+
         <input type="submit" class="button form-control submit" value="SEND MESSAGE">
     </form>
     </section>
+   
+
 
 <!--FOOTER-------------------------------------------------->
 

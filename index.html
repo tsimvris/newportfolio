@@ -13,15 +13,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="CSS/style.css">
     <title>Petros Tsimvris</title>
-    <!-- <script  src="https://code.jquery.com/jquery-1.12.4.min.js"  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="  crossorigin="anonymous"></script> -->
+    <script  src="https://code.jquery.com/jquery-1.12.4.min.js"  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="  crossorigin="anonymous"></script>
 
 </head>
 
 <body>
 <!--HEADER-------------------------------------------------->
     <header>
+
         <nav id="main-nav">
-            <ul>
+
+            <i class="fa fa-bars" aria-hidden="true"></i>
+
+            <ul class="open">
                 <a href="#home"><li>Home</li></a>
                 <a href="#about"><li>About</li></a>
                 <a href="#work"><li>Work</li></a>
@@ -48,7 +52,7 @@
         <hr>
         <img src="assets/avataaars.svg" alt="avatar">
         <h4>Petros Tsimvris</h4>
-        <p>Click <a id="petros" href="assets/Lebenslauf.pdf" target="_blank">here</a> to see my CV     
+        <p>If you wish to learn more about me, just click <a id="petros" href="assets/Lebenslauf.pdf" target="_blank">here</a> to see my CV.     
                 
             </p>
     </section>
@@ -74,18 +78,17 @@
     <section id="contact">
         <h3 class="aboutme">Contact</h3>
         <hr>
-        <form action="">
-        <input class="input_text" type="email" tabindex="1" placeholder="E-Mail"><br>
-        <input class="input_text"  type="text" tabindex="2" placeholder="Your Name"><br>
-        <input class="input_text"  type="text" tabindex="3" placeholder="Your Name"><br>
-        <textarea tabindex="4" name="" id="" cols="20" rows="5" placeholder="Your Message"></textarea><br>
-        <input type="submit" class="button">
+        <form action="contact-form-handler.php" method="post" id="contact-form">
+        <input class="input_text form-control" name="email" type="email" tabindex="1" placeholder="E-Mail" required><br>
+        <input class="input_text form-control" name="name"  type="text" tabindex="2" placeholder="Your Name" required><br>
+        <textarea tabindex="3" name="message" class="form-control" id="" cols="20" rows="5" placeholder="Your Message" required></textarea><br>
+        <input type="submit" class="button form-control submit" value="SEND MESSAGE">
     </form>
     </section>
 
 <!--FOOTER-------------------------------------------------->
 
-    <footer id="">
+    <footer id="down">
         <p>
             &copy; 2021 - 2022 Petros Tsimvris
         </p>

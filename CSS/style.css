@@ -7,8 +7,8 @@ h2{color: white;}
 h3{font-size: 40px; padding-top: 8%; margin-bottom: 5px;}
 h4, p{font-family: 'Roboto Slab', serif; color:#5797D9;}
 hr{width: 30px; height:3px; background: white; border:0; margin: 0 auto 40px auto;}
-li, #logo, img, .button {transition: all 300ms; -webkit-transition: all 300ms; -moz-transition: all 300ms; -o-transition: all 300ms;}
-
+li, #logo, img, .button, .fa-bars {transition: all 300ms; -webkit-transition: all 300ms; -moz-transition: all 300ms; -o-transition: all 300ms;}
+.fa-bars{display: none;}
 /* HEADER   ****************************/
 header{
     width:100%;
@@ -32,7 +32,7 @@ header{
     width:100%;
     height: 50px;
 }
-header nav { float: right; margin: 10px 50px 0 0 ; }
+header nav { display:flex; float: right; margin: 10px 50px 0 0 ; }
 header nav ul li{float: left; margin-left: 25px; color: white !important;}
 header nav ul li a{font-size: 16px;}
 header nav ul li:hover{padding-top: 5px;}
@@ -237,12 +237,7 @@ footer p{
     #logo img{
         height:40px;
     }
-    header nav{
-        margin-top: 0;
-    }
-    header nav ul li{
-        font-size: 10px;
-    }
+   
     #home h1{
         font-size: 70px;
         margin-top: 150px;
@@ -269,6 +264,47 @@ footer p{
         width:55%;
         height: auto;
     }
+    /*ab hier*/
+    header nav{
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 20px 0 0 ;
+    }
+    .fa-bars{
+        font-size: 17px;
+        display: inline-block;
+        width: 100%;
+        cursor: pointer;
+        text-align: right;
+        margin:20px 0px 0 0 ;
+    }
+    .fa-bars:hover{
+        opacity: 0.5;
+    }
+    header nav ul{
+        height: 0;
+        overflow: hidden;
+        margin:0;
+        padding: 0;
+        width: 100%;
+    }
+    header nav ul li{
+        font-size: 10px;
+        width:50%;
+        padding: 5px 0;
+        margin:0;
+        border-top:1px solid #5797D9;
+    }
+    header nav ul li:hover{
+        background-color: #5797D9;
+        color:white;
+    }
+    header nav ul.open{
+        height: auto;
+    }
+    
+    
     
 }
 /* Mobile BIG   ****************************/

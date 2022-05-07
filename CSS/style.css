@@ -135,11 +135,15 @@ form input, textarea{
     outline: none;
 
 }
+#success{
+    color:#28A745
+}
 form input{
     width: 552px;
     height: 30px;
 }
 form textarea{
+    color:#5797D9;
     width: 560px;
     height: 200px;
     resize: none;

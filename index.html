@@ -78,15 +78,16 @@
     <section id="contact">
         <h3 class="aboutme">Contact</h3>
         <hr>
-        <form action="mail.php" method="POST" id="contact-form">
+        <form action="https://formsubmit.co/65895f34fc756f2b4f286bd2b4720cc5" method="POST">
 
-        <input class="input_text form-control" name="email" id="email" type="email" tabindex="1" placeholder="E-Mail" required><br>
+        <input class="input_text" name="email" id="email" type="email" tabindex="1" placeholder="E-Mail" required><br>
+            
+        <input class="input_text" name="name" id="name"  type="text" tabindex="2" placeholder="Your Name" required><br>
 
-        <input class="input_text form-control" name="name" id="name"  type="text" tabindex="2" placeholder="Your Name" required><br>
+        <textarea tabindex="3" name="message" class="form-control" id="message" cols="20" rows="5" placeholder="Your Message" required></textarea><br>
 
-        <textarea tabindex="3" name="message" class="form-control" id="" cols="20" rows="5" placeholder="Your Message" required></textarea><br>
-
-        <input type="submit" class="button form-control submit" value="SEND MESSAGE">
+        <input type="submit" class="button" value="Send Message">
+        <p id="success""></p>
     </form>
     </section>
    
@@ -101,6 +102,8 @@
     </footer>
 
     <script src="js/mobile-menu.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script> 
+     
 </body>
 
 </html>

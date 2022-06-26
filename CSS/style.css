@@ -410,15 +410,16 @@ footer p {
     width: auto;
   }
   #projects ul li {
-    width: 33.3%;
+    width: 50%;
   }
-  #projects ul li:last-child {
-    padding-bottom: 20%;
+  #projects ul {
+    margin: 0;
+    padding: 0;
   }
   #projects img {
-    width: 55%;
-    height: auto;
+    width: 70%;
   }
+
   form input,
   textarea {
     font-size: 12px;
@@ -476,22 +477,20 @@ footer p {
     margin: 0 auto 0 auto;
   }
   #projects {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: auto;
   }
   #projects ul li {
     width: 50%;
-    margin-bottom: 25px;
   }
-  #projects ul li:last-child {
-    padding-bottom: 20%;
+  #projects ul {
+    margin: 0;
+    padding: 0;
   }
   #projects img {
-    width: 50%;
-    height: auto;
+    width: 70%;
+    height: 130px;
   }
+
   form input,
   textarea {
     font-size: 12px;

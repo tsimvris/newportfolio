@@ -1,465 +1,515 @@
-html, body{ margin:0;  padding:0; height:100%; text-align: center; background-color: #494949;}
-section{min-height:100%;}
-a{text-decoration: none;}
-li{list-style-type: none;}
-h1, h2, h3, a{font-family: 'Roboto', sans-serif; font-weight: 600; color:white; text-transform: uppercase;}
-h2{color: white;}
-h3{font-size: 40px; padding-top: 8%; margin-bottom: 5px;}
-h4, p{font-family: 'Roboto Slab', serif; color:#5797D9;}
-hr{width: 30px; height:3px; background: white; border:0; margin: 0 auto 40px auto;}
-li, #logo, img, .button, .fa-bars {transition: all 300ms; -webkit-transition: all 300ms; -moz-transition: all 300ms; -o-transition: all 300ms;}
-.fa-bars{display: none;}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  text-align: center;
+  background-color: #494949;
+}
+section {
+  min-height: 100%;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+h1,
+h2,
+h3,
+a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+}
+h2 {
+  color: white;
+}
+h3 {
+  font-size: 40px;
+  padding-top: 8%;
+  margin-bottom: 5px;
+}
+h4,
+p {
+  font-family: "Roboto Slab", serif;
+  color: #5797d9;
+}
+hr {
+  width: 30px;
+  height: 3px;
+  background: white;
+  border: 0;
+  margin: 0 auto 40px auto;
+}
+li,
+#logo,
+img,
+.button,
+.fa-bars {
+  transition: all 300ms;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -o-transition: all 300ms;
+}
+.fa-bars {
+  display: none;
+}
 /* HEADER   ****************************/
-header{
-    width:100%;
-    height:65px;
-    position: fixed;
-    top:0;
-    left:0;
-    background: transparent;
-    z-index: 1;
+header {
+  width: 100%;
+  height: 65px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: transparent;
+  z-index: 1;
 }
 
-#logo{
-    width: 140px;
-    float:left;
-    margin: 10px 0 0 50px;
+header nav {
+  display: flex;
+  float: right;
+  margin: 10px 50px 0 0;
 }
-#logo:hover{
-    opacity: 0.5;
+header nav ul li {
+  float: left;
+  margin-left: 25px;
+  color: white !important;
 }
-#logo img{
-    width:100%;
-    height: 50px;
+header nav ul li a {
+  font-size: 16px;
 }
-header nav { display:flex; float: right; margin: 10px 50px 0 0 ; }
-header nav ul li{float: left; margin-left: 25px; color: white !important;}
-header nav ul li a{font-size: 16px;}
-header nav ul li:hover{padding-top: 5px;}
+header nav ul li:hover {
+  padding-top: 5px;
+}
 
 /* HOME   ****************************/
-.aboutme{
-    color:#5797D9;
+.aboutme {
+  color: #5797d9;
 }
-#home{
-    background: url(../assets/sea-7086932.jpg); 
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
-    
+#home {
+  background: url(../assets/sea-7086932.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
-#home h1{
-    margin: 220px auto 0 auto;
-    font-size: 110px;
+#home h1 {
+  margin: 220px auto 0 auto;
+  font-size: 110px;
 }
-#home h2{
-    margin: 0 auto 0 auto;
-    font-size: 25px;
+#home h2 {
+  margin: 0 auto 0 auto;
+  font-size: 25px;
 }
 #home img {
-    width: 32px;
-    margin-top:400px;
-    opacity: 0.7;
+  width: 32px;
+  margin-top: 400px;
+  opacity: 0.7;
 }
-#home img:hover{
-    opacity: 1;
+#home img:hover {
+  opacity: 1;
 }
-#home hr{
-visibility: hidden;}
+#home hr {
+  visibility: hidden;
+}
 /* ABOUT   ****************************/
-.skills{
-    width:50%;
-    margin-top:-50px;
-    float: left;
-    color: #f0f0f0;
-    font-family: 'Roboto Slab', serif;
-    text-align: center;
+.skills {
+  width: 50%;
+  margin-top: -50px;
+  float: left;
+  color: #f0f0f0;
+  font-family: "Roboto Slab", serif;
+  text-align: center;
 }
-#about img{
-    width: 240px;
-   
+#about img {
+  width: 240px;
 }
 
-#about h4{
-    font-size: 25px;
+#about h4 {
+  font-size: 25px;
 }
-#about p{
-    width: 80%;
-    margin:0 auto 0 auto;
+#about p {
+  width: 80%;
+  margin: 0 auto 0 auto;
 }
-#about img:hover{
-    transform: scale(1.1);
-   -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -o-transform: scale(1.1);
+#about img:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
 }
 /* WORK   ****************************/
-#work{
-    background-color: #5797D9;
-    
+#work {
+  background-color: #5797d9;
 }
-#work h3{
-    color:#494949
+#work h3 {
+  color: #494949;
 }
-#projects{
-    width:80%;
-    margin:0 auto 0 auto;
-
+#projects {
+  width: 80%;
+  margin: 0 auto 0 auto;
 }
-#projects ul{ padding:0;}
-#projects ul li{
-    width: 33.3%;
-    float: left;
-    margin-bottom:15px;
+#projects ul {
+  padding: 0;
 }
-#projects img{
-    width: 280px;
-    height: 170px;
-    border-radius: 10px;
+#projects ul li {
+  width: 33.3%;
+  float: left;
+  margin-bottom: 15px;
 }
-#projects img:hover{
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-     -moz-transform: scale(1.1);
-     -o-transform: scale(1.1);
-     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+#projects img {
+  width: 280px;
+  height: 170px;
+  border-radius: 10px;
+}
+#projects img:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
 }
 /* CONTACT   ****************************/
-form input, textarea{
-    font-family: 'Roboto Slab', serif;
-    font-size: 15px;
-    margin-bottom: 10px;
-    border-radius: 2px;
-    border: 2px solid;
-    border-color: #5797D9;
-    outline: none;
+form input,
+textarea {
+  font-family: "Roboto Slab", serif;
+  font-size: 15px;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  border: 2px solid;
+  border-color: #5797d9;
+  outline: none;
+}
+#success {
+  color: #28a745;
+}
+form input {
+  width: 552px;
+  height: 30px;
+}
+form textarea {
+  color: #5797d9;
+  width: 560px;
+  height: 200px;
+  resize: none;
+}
+.input_text {
+  color: #5797d9;
+  padding-left: 10px;
+}
+form input:first-child {
+  margin-top: 10px;
+}
+::-webkit-input-placeholder {
+  color: #999999;
+}
+::-moz-placeholder {
+  color: #999999;
+}
+:-ms-input-placeholder {
+  color: #999999;
+}
+:-moz-placeholder {
+  color: #999999;
+}
 
+.button {
+  background-color: #5797d9;
+  color: white;
+  width: 566px;
+  height: 50px;
 }
-#success{
-    color:#28A745
-}
-form input{
-    width: 552px;
-    height: 30px;
-}
-form textarea{
-    color:#5797D9;
-    width: 560px;
-    height: 200px;
-    resize: none;
-}
-.input_text{
-    color:#5797D9;
-    padding-left: 10px;
-}
-form input:first-child{
-    margin-top:10px;
-}
-::-webkit-input-placeholder{color:#999999;}
-::-moz-placeholder{color:#999999;}
-:-ms-input-placeholder{color:#999999;}
-:-moz-placeholder{color:#999999;}
-
-.button{
-    background-color: #5797D9;
-    color:white;
-    width: 566px;
-    height: 50px;
-}
-.button:hover{
-    background-color: white;
-    color:#5797D9;
-    cursor: pointer;
+.button:hover {
+  background-color: white;
+  color: #5797d9;
+  cursor: pointer;
 }
 /* FOOTER   ****************************/
-footer{
-    width: 100%;
-    height: 70px;
-    background-color: #5797D9;
+footer {
+  width: 100%;
+  height: 70px;
+  background-color: #5797d9;
 }
-footer p{
-    color:#f0f0f0;
-    font-size: 12px;
-    padding-top: 30px;
+footer p {
+  color: #f0f0f0;
+  font-size: 12px;
+  padding-top: 30px;
 }
 /* MEDIA QUERIES   ****************************/
 
 /* TABLETS   ****************************/
 @media screen and (max-width: 920px) {
-    #home{
-        background: url(../assets/sea-7086932.jpg); 
-        background-position: center center;
-        background-size: cover;
-        background-attachment: fixed;
-        
-    }
-    header{
-        height: auto;
-    }
-    #logo{
-        width: 100px;
-        margin-top: 5px;
-    }
-    #logo img{
-        height:50px;
-    }
-    header nav{
-        margin-top: 0;
-    }
-    header nav ul li{
-        font-size: 12px;
-    }
-    #home h1{
-        font-size: 90px;
-        margin-top: 200px;
-    }
-    #home h2{
-        font-size: 22px;
-    }
-    h3{
-        padding-top:12% ;
-    }
-    #about p{
-        width: 80%;
-    }
-    #projects {
-        width: auto;
-    }
-    #projects ul li{
-        width: 33.3%;
-    }
-    #projects ul li:last-child{
-        padding-bottom: 20%;
-    }
-    #projects img{
-        width:55%;
-        height: auto;
-    }
+  #home {
+    background: url(../assets/sea-7086932.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  header {
+    height: auto;
+  }
+  #logo {
+    width: 100px;
+    margin-top: 5px;
+  }
+  #logo img {
+    height: 50px;
+  }
+  header nav {
+    margin-top: 0;
+  }
+  header nav ul li {
+    font-size: 12px;
+  }
+  #home h1 {
+    font-size: 90px;
+    margin-top: 200px;
+  }
+  #home h2 {
+    font-size: 22px;
+  }
+  h3 {
+    padding-top: 12%;
+  }
+  #about p {
+    width: 80%;
+  }
+  #projects {
+    width: auto;
+  }
+  #projects ul li {
+    width: 33.3%;
+  }
+  #projects ul li:last-child {
+    padding-bottom: 20%;
+  }
+  #projects img {
+    width: 55%;
+    height: auto;
+  }
 }
 /* Small Tablets   ****************************/
 @media screen and (max-width: 758px) {
-    #home{
-        background: url(../assets/sea-7086932.jpg); 
-        background-position: center center;
-        background-size: cover;
-        background-attachment: fixed;
-        
-    }
-    header{
-        height: auto;
-    }
-    #logo{
-        width: 70px;
-        margin-top: 5px;
-    }
-    #logo img{
-        height:40px;
-    }
-   
-    #home h1{
-        font-size: 70px;
-        margin-top: 150px;
-    }
-    #home h2{
-        font-size: 22px;
-    }
-    h3{
-        padding-top:12% ;
-    }
-    #about p{
-        width: 80%;
-    }
-    #projects {
-        width: auto;
-    }
-    #projects ul li{
-        width: 33.3%;
-    }
-    #projects ul li:last-child{
-        padding-bottom: 20%;
-    }
-    #projects img{
-        width:55%;
-        height: auto;
-    }
-    /*ab hier*/
-    header nav{
-        display:flex;
-        flex-direction: column;
-        width: 100%;
-        margin: 0 20px 0 0 ;
-    }
-    .fa-bars{
-        font-size: 17px;
-        display: inline-block;
-        width: 100%;
-        cursor: pointer;
-        text-align: right;
-        margin:20px 0px 0 0 ;
-    }
-    .fa-bars:hover{
-        opacity: 0.5;
-    }
-    header nav ul{
-        height: 0;
-        overflow: hidden;
-        margin:0;
-        padding: 0;
-        width: 100%;
-    }
-    header nav ul li{
-        font-size: 10px;
-        width:50%;
-        padding: 5px 0;
-        margin:0;
-        border-top:1px solid #5797D9;
-    }
-    header nav ul li:hover{
-        background-color: #5797D9;
-        color:white;
-    }
-    header nav ul.open{
-        height: auto;
-    }
-    
-    
-    
+  #home {
+    background: url(../assets/sea-7086932.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  header {
+    height: auto;
+  }
+  #logo {
+    width: 70px;
+    margin-top: 5px;
+  }
+  #logo img {
+    height: 40px;
+  }
+
+  #home h1 {
+    font-size: 70px;
+    margin-top: 150px;
+  }
+  #home h2 {
+    font-size: 22px;
+  }
+  h3 {
+    padding-top: 12%;
+  }
+  #about p {
+    width: 80%;
+  }
+  #projects {
+    width: auto;
+  }
+  #projects ul li {
+    width: 33.3%;
+  }
+  #projects ul li:last-child {
+    padding-bottom: 20%;
+  }
+  #projects img {
+    width: 55%;
+    height: auto;
+  }
+  /*ab hier*/
+  header nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 20px 0 0;
+  }
+  .fa-bars {
+    font-size: 17px;
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    text-align: right;
+    margin: 20px 0px 0 0;
+  }
+  .fa-bars:hover {
+    opacity: 0.5;
+  }
+  header nav ul {
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  header nav ul li {
+    font-size: 10px;
+    width: 50%;
+    padding: 5px 0;
+    margin: 0;
+    border-top: 1px solid #5797d9;
+  }
+  header nav ul li:hover {
+    background-color: #5797d9;
+    color: white;
+  }
+  header nav ul.open {
+    height: auto;
+  }
 }
 /* Mobile BIG   ****************************/
 @media screen and (max-width: 590px) {
-    #home{
-        background: url(../assets/sea-7086932.jpg); 
-        background-position: center center;
-        background-size: cover;
-        background-attachment: fixed;
-        
-    }
-    header{
-        height: auto;
-    }
-    #logo{
-        width: 70px;
-        margin-top: 5px;
-    }
-    #logo img{
-        height:30px;
-    }
-    header nav{
-        margin-top: 0;
-    }
-    header nav ul li{
-        font-size: 10px;
-    }
-    #home h1{
-        font-size: 50px;
-        margin-top: 150px;
-    }
-    #home h2{
-        font-size: 22px;
-    }
-    h3{
-        padding-top:20% ;
-    }
-    #about p{
-        width: 80%;
-    }
-    #projects {
-        width: auto;
-    }
-    #projects ul li{
-        width: 33.3%;
-    }
-    #projects ul li:last-child{
-        padding-bottom: 20%;
-    }
-    #projects img{
-        width:55%;
-        height: auto;
-    }
-    form input, textarea{
-        font-size: 12px;
-        margin-bottom: 10px;
-    }
-    form input{
-        width: 80%;
-        height: 30px;
-    }
-    form textarea{
-        width: 82%;
-        height: 100px;
-    }   
-    .button{
-        width: 84%;
-        height: 30px;
-}
+  #home {
+    background: url(../assets/sea-7086932.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  header {
+    height: auto;
+  }
+  #logo {
+    width: 70px;
+    margin-top: 5px;
+  }
+  #logo img {
+    height: 30px;
+  }
+  header nav {
+    margin-top: 0;
+  }
+  header nav ul li {
+    font-size: 10px;
+  }
+  #home h1 {
+    font-size: 50px;
+    margin-top: 150px;
+  }
+  #home h2 {
+    font-size: 22px;
+  }
+  h3 {
+    padding-top: 20%;
+  }
+  #about p {
+    width: 80%;
+  }
+  #projects {
+    width: auto;
+  }
+  #projects ul li {
+    width: 33.3%;
+  }
+  #projects ul li:last-child {
+    padding-bottom: 20%;
+  }
+  #projects img {
+    width: 55%;
+    height: auto;
+  }
+  form input,
+  textarea {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  form input {
+    width: 80%;
+    height: 30px;
+  }
+  form textarea {
+    width: 82%;
+    height: 100px;
+  }
+  .button {
+    width: 84%;
+    height: 30px;
+  }
 }
 /* Mobile SMALL   ****************************/
 @media screen and (max-width: 430px) {
-    #home{
-        background: url(../assets/sea-7086932.jpg); 
-        background-position: center center;
-        background-size: cover;
-        background-attachment: fixed;
-        
-    }
-    header{
-        height: auto;
-    }
-    #logo{
-        width: 70px;
-        margin-top: 5px;
-    }
-    #logo img{
-        height:30px;
-    }
-    header nav{
-        margin-top: 0;
-    }
-    header nav ul li{
-        font-size: 8px;
-    }
-    #home h1{
-        font-size: 40px;
-        margin-top: 150px;
-    }
-    #home h2{
-        font-size: 18px;
-    }
-    h3{
-        padding-top:24% ;
-    }
-    #about p{
-        width: 80%;
-    }
-    #projects {
-        width: auto;
-    }
-    #projects ul li{
-        width: 50%;
-        margin-bottom:10px;
-
-    }
-    #projects ul li:last-child{
-        padding-bottom: 20%;
-    }
-    #projects img{
-        width:50%;
-        height: auto;
-    }
-    form input, textarea{
-        font-size: 12px;
-        margin-bottom: 10px;
-    }
-    form input{
-        width: 80%;
-        height: 30px;
-    }
-    form textarea{
-        width: 82%;
-        height: 100px;
-    }   
-    .button{
-        width: 84%;
-        height: 30px;
-}
+  #home {
+    background: url(../assets/sea-7086932.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  header {
+    height: auto;
+  }
+  #logo {
+    width: 70px;
+    margin-top: 5px;
+  }
+  #logo img {
+    height: 30px;
+  }
+  header nav {
+    margin-top: 0;
+  }
+  header nav ul li {
+    font-size: 8px;
+  }
+  #home h1 {
+    font-size: 40px;
+    margin-top: 150px;
+  }
+  #home h2 {
+    font-size: 18px;
+  }
+  h3 {
+    padding-top: 24%;
+  }
+  #about p {
+    width: 80%;
+    margin: 0 auto 0 auto;
+  }
+  #projects {
+    width: auto;
+  }
+  #projects ul li {
+    width: 50%;
+    margin-bottom: 10px;
+  }
+  #projects ul li:last-child {
+    padding-bottom: 20%;
+  }
+  #projects img {
+    width: 50%;
+    height: auto;
+  }
+  form input,
+  textarea {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  form input {
+    width: 80%;
+    height: 30px;
+  }
+  form textarea {
+    width: 82%;
+    height: 100px;
+  }
+  .button {
+    width: 84%;
+    height: 30px;
+  }
 }

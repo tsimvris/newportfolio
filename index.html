@@ -13,6 +13,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/modal.css">
     <title>Petros Tsimvris</title>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"
         integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
@@ -70,7 +71,8 @@
             strive toward. I’m not comfortable with settling, and I’m always looking for an opportunity to do better.
         </p><br>
         <p>If you wish to learn more about me, just click <a id="petros" href="assets/Lebenslauf.pdf"
-                target="_blank">here</a> to see my CV.
+                target="_blank">here </a> to see my CV.
+
 
         </p>
     </section>
@@ -127,10 +129,39 @@
 
     <footer id=" down">
             <p>
-                &copy; 2021 - 2022 Petros Tsimvris <br> <a href="/impressum.html">Impressum</a>
+                &copy; 2021 - 2022 Petros Tsimvris <br>
+                <a class="btn" id="btn-modal">Impressum</a>
+
+            <div class="overlay" id="overlay">
+
+            </div>
+            <div class="modal" id="modal">
+                <h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
+                <p>Petros Tsimvris<br />
+                    Buchfinkenweg 4<br />
+                    04159 Leipzig</p>
+                <br><br><br>
+                <h2>Kontakt</h2>
+                <p>
+                    E-Mail: <a href="mailto:petros@tsimvris.com">petros@tsimvris.de</a> </p><br>
+                <br><br><br>
+                <h2>Redaktionell verantwortlich</h2>
+                <p>Petros Tsimvris<br />
+                    Buchfinkenweg 4<br />
+                    04159 Leipzig</p>
+                <button class="modal-close-btn" id="close-btn"><i class="fa fa-times" title="閉じる"></i>
+
+
+                </button>
+            </div>
+
+
+
+
+
             </p>
             </footer>
-
+            <script src="js/modal.js"></script>
             <script src="js/mobile-menu.js"></script>
             <script src="https://smtpjs.com/v3/smtp.js"></script>
 

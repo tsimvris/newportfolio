@@ -1,0 +1,281 @@
+/* MEDIA QUERIES   ****************************/
+
+/* TABLETS   ****************************/
+@media screen and (max-width: 1130px) {
+  #home {
+    background: url(../assets/sea-7086932.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  header {
+    height: auto;
+  }
+  #logo {
+    width: 100px;
+    margin-top: 5px;
+  }
+  #logo img {
+    height: 50px;
+  }
+  header nav {
+    margin-top: 0;
+  }
+  header nav ul li {
+    font-size: 12px;
+  }
+  #home h1 {
+    font-size: 90px;
+    margin-top: 200px;
+  }
+  #home h2 {
+    font-size: 22px;
+  }
+  h3 {
+    padding-top: 12%;
+  }
+  #about p {
+    width: 80%;
+  }
+  #projects {
+    width: auto;
+  }
+  #projects ul li {
+    width: 33.3%;
+  }
+  #projects ul li:last-child {
+    padding-bottom: 20%;
+  }
+  .typing {
+    font-size: 50px !important;
+  }
+}
+/* Small Tablets   ****************************/
+@media screen and (max-width: 890px) {
+  #home {
+    background: url(../assets/sea-7086932.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  header {
+    height: auto;
+  }
+  #logo {
+    width: 70px;
+    margin-top: 5px;
+  }
+  #logo img {
+    height: 40px;
+  }
+
+  #home h1 {
+    font-size: 70px;
+    margin-top: 150px;
+  }
+  #home h2 {
+    font-size: 22px;
+  }
+  h3 {
+    padding-top: 12%;
+  }
+  #about p {
+    width: 80%;
+  }
+  #projects {
+    width: auto;
+  }
+  #projects ul li {
+    width: 50%;
+  }
+  #projects ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  /*ab hier*/
+  header nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 20px 0 0;
+  }
+  .fa-bars {
+    font-size: 17px;
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    text-align: right;
+    margin: 20px 0px 0 0;
+  }
+  .fa-bars:hover {
+    opacity: 0.5;
+  }
+  header nav ul {
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  header nav ul li {
+    font-size: 10px;
+    width: 50%;
+    padding: 5px 0;
+    margin: 0;
+    border-top: 1px solid #5797d9;
+  }
+  header nav ul li:hover {
+    background-color: #5797d9;
+    color: white;
+  }
+  header nav ul.open {
+    height: auto;
+  }
+  .typing {
+    font-size: 30px !important;
+  }
+}
+/* Mobile BIG   ****************************/
+@media screen and (max-width: 590px) {
+  #home {
+    background: url(../assets/sea-7086932.jpg);
+    background-size: cover;
+  }
+  header {
+    height: auto;
+  }
+  #logo {
+    width: 70px;
+    margin-top: 5px;
+  }
+  #logo img {
+    height: 30px;
+  }
+  header nav {
+    margin-top: 0;
+  }
+  header nav ul li {
+    font-size: 10px;
+  }
+  #home h1 {
+    font-size: 50px;
+    margin-top: 150px;
+  }
+  #home h2 {
+    font-size: 22px;
+  }
+  h3 {
+    padding-top: 20%;
+  }
+  #about p {
+    width: 80%;
+  }
+  #projects {
+    width: auto;
+  }
+  #projects ul li {
+    width: 50%;
+  }
+  #projects ul {
+    margin: 0;
+    padding: 0;
+  }
+  #projects img {
+    width: 70%;
+  }
+
+  form input,
+  textarea {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  form input {
+    width: 80%;
+    height: 30px;
+  }
+  form textarea {
+    width: 82%;
+    height: 100px;
+  }
+  .button {
+    width: 84%;
+    height: 30px;
+  }
+  .typing {
+    font-size: 22px !important;
+  }
+}
+/* Mobile SMALL   ****************************/
+@media screen and (max-width: 430px) {
+  #home {
+    background: url(../assets/sea-7086932.jpg);
+    background-size: cover;
+  }
+  header {
+    height: auto;
+  }
+  #logo {
+    width: 70px;
+    margin-top: 5px;
+  }
+  #logo img {
+    height: 30px;
+  }
+  header nav {
+    margin-top: 0;
+  }
+  header nav ul li {
+    font-size: 8px;
+  }
+  #home h1 {
+    font-size: 40px;
+    margin-top: 150px;
+  }
+  #home h2 {
+    font-size: 18px;
+  }
+  h3 {
+    padding-top: 24%;
+  }
+  #about p {
+    width: 80%;
+    margin: 0 auto 0 auto;
+  }
+  #projects {
+    width: auto;
+  }
+  #projects ul li {
+    width: 50%;
+  }
+  #projects ul {
+    margin: 0;
+    padding: 0;
+  }
+  #projects img {
+    width: 70%;
+    height: 130px;
+  }
+
+  form input,
+  textarea {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  form input {
+    width: 80%;
+    height: 30px;
+  }
+  form textarea {
+    width: 82%;
+    height: 100px;
+  }
+  .button {
+    width: 84%;
+    height: 30px;
+  }
+  .typing {
+    font-size: 20px !important;
+  }
+}
+/** MQ END **/

@@ -11,39 +11,63 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #5797d9;
+  background: linear-gradient(
+    45deg,
+    #5797d9,
+    #5c99da,
+    #6aa0dc,
+    #7ca9e0,
+    #91b5e5,
+    #a7c2ea,
+    #bdd1ef,
+    #d1def4,
+    #e3ebf8,
+    #f2f5fc,
+    #fbfcfe,
+    #ffffff
+  );
   color: white;
 }
 header a {
-  color: white;
+  color: #5797d9;
   font-weight: 800;
   text-decoration: none;
 }
 header a:hover {
   transform: translateY(-3px);
   transition: 1s;
-  color: rgba(255, 255, 255, 0.7);
-}
-header h1:hover {
-  color: #5797d9;
-  transform: translateY(40px);
-  transition: 1s all;
 }
 /** Main Container **/
 .container {
-  background-color: aqua;
   height: calc(100vh - 40px);
   width: 100%;
   display: flex;
   justify-content: center;
   gap: 20px;
   align-items: center;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
 }
 .perso,
 .beruf,
 .skills {
   border-radius: 25px;
-  background-color: wheat;
+  background: rgb(2, 0, 36);
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 19%,
+    rgba(8, 25, 131, 1) 40%,
+    rgba(6, 66, 158, 1) 53%,
+    rgba(4, 116, 191, 1) 69%,
+    rgba(3, 144, 210, 1) 78%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  border: 3px solid white;
   width: 30%;
   height: calc((100vh - 40px) - 40px);
 }

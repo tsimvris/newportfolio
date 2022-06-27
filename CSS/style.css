@@ -285,6 +285,9 @@ footer p {
   #projects ul li:last-child {
     padding-bottom: 20%;
   }
+  .typing {
+    font-size: 50px !important;
+  }
 }
 /* Small Tablets   ****************************/
 @media screen and (max-width: 890px) {
@@ -368,6 +371,9 @@ footer p {
   header nav ul.open {
     height: auto;
   }
+  .typing {
+    font-size: 30px !important;
+  }
 }
 /* Mobile BIG   ****************************/
 @media screen and (max-width: 590px) {
@@ -436,6 +442,9 @@ footer p {
   .button {
     width: 84%;
     height: 30px;
+  }
+  .typing {
+    font-size: 22px !important;
   }
 }
 /* Mobile SMALL   ****************************/
@@ -507,5 +516,38 @@ footer p {
   .button {
     width: 84%;
     height: 30px;
+  }
+  .typing {
+    font-size: 20px !important;
+  }
+}
+/** MQ END **/
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.typing {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  width: 22ch;
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-size: 40px;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
   }
 }

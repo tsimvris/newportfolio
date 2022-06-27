@@ -29,3 +29,41 @@ header h1:hover {
   transform: translateY(40px);
   transition: 1s all;
 }
+/** Main Container **/
+.container {
+  background-color: aqua;
+  height: calc(100vh - 40px);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+.perso,
+.beruf,
+.skills {
+  border-radius: 25px;
+  background-color: wheat;
+  width: 30%;
+  height: calc((100vh - 40px) - 40px);
+}
+/** Perso **/
+.perso {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+.perso h3 {
+  margin: 10px 20px;
+}
+.perso ul {
+  margin: 20px 20px;
+  list-style: "";
+}
+.perso ul li {
+  margin: 20px 20px;
+}
+.perso ul li a {
+  text-decoration: none;
+  color: white;
+}

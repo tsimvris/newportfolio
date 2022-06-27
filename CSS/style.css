@@ -451,7 +451,6 @@ footer p {
 @media screen and (max-width: 430px) {
   #home {
     background: url(../assets/sea-7086932.jpg);
-    background-position: center center;
     background-size: cover;
     background-attachment: fixed;
   }

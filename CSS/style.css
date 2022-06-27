@@ -379,9 +379,7 @@ footer p {
 @media screen and (max-width: 590px) {
   #home {
     background: url(../assets/sea-7086932.jpg);
-    background-position: center center;
     background-size: cover;
-    background-attachment: fixed;
   }
   header {
     height: auto;
@@ -452,7 +450,6 @@ footer p {
   #home {
     background: url(../assets/sea-7086932.jpg);
     background-size: cover;
-    background-attachment: fixed;
   }
   header {
     height: auto;
